@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <header
       className="p-8 flex justify-between items-center
-      relative"
+      sticky z-50 "
     >
       <h1 className="font-bold text-2xl">
         Twin<span>Feed</span>
@@ -20,7 +20,7 @@ export const Navbar = () => {
       {isMenuOpen && (
         <nav
           className="fixed h-screen w-4/6 backdrop-blur-xl top-0
-          right-0 table p-8"
+          right-0 table p-8 z-20"
         >
           <AiOutlineClose
             size={28}
