@@ -1,9 +1,11 @@
+import { Navbar } from './components';
+
 function App() {
   return (
     <div className="App">
-    Hello, World!
-   </div>
-  )
+      <Navbar />
+    </div>
+  );
 }
 
-export default App
+export default App;
