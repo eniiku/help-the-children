@@ -12,6 +12,7 @@
 
 .container {
 	min-height: 100vh;
+	min-width: 100%;
 	@apply px-4 md:px-8;
 }
 
