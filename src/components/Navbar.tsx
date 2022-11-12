@@ -10,32 +10,41 @@ export const Navbar = () => {
   const handleMenuClose = () => setIsMenuOpen(false);
 
   return (
-    <header
-      className='p-8 flex justify-between items-center
-      sticky z-50 '
-    >
-      <div>
-        <div>
-          <img src={logoIcon} alt='logo for TwinsFeed' />
-          <h1 className='font-bold text-2xl'>
+    <header className='flex justify-between items-center sticky z-40 py-8'>
+      <div className='flex items-center gap-12'>
+        <div className='flex items-center gap-3'>
+          <img
+            src={logoIcon}
+            alt='logo for TwinsFeed'
+            className='w-[35px] h-[35px] md:w-[50px] md:h-[50px]'
+          />
+
+          <h1 className='font-bold text-xl md:text-2xl'>
             Twin<span>Feed</span>
           </h1>
-          <nav>
-            <ul>
-              {['about us', 'mission', 'contact'].map((link) => (
-                <li key={link}>{link}</li>
-              ))}
-            </ul>
-          </nav>
         </div>
+
+        <nav className='hidden md:block'>
+          <ul className='flex items-center gap-4'>
+            {['about us', 'mission', 'contact'].map((link) => (
+              <li key={link} className='capitalize font-medium'>
+                {link}
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <button>donate now</button>
-      <AiOutlineMenu size={26} onClick={handleMenuOpen} />
+      <div className='hidden md:block w-120px h-50px relative'>
+        <button className='custom-btn relative'>donate now</button>
+
+        <div className='custom-btn-shadow'></div>
+      </div>
+      <AiOutlineMenu size={26} onClick={handleMenuOpen} className='md:hidden' />
 
       {isMenuOpen && (
         <nav
-          className='fixed h-screen w-4/6 backdrop-blur-xl top-0
-          right-0 table p-8 z-20'
+          className='fixed inset-0 h-screen w-4/6 backdrop-blur-xl bg-black
+            table p-8 z-20 bg-opacity-20'
         >
           <AiOutlineClose
             size={28}
@@ -43,12 +52,12 @@ export const Navbar = () => {
             onClick={handleMenuClose}
           />
           <ul className=' table-cell align-middle'>
-            {['about us', 'mission', 'contact'].map((link) => (
+            {['about us', 'mission', 'contact', 'donate'].map((link) => (
               <li
                 key={link}
                 onClick={handleMenuClose}
-                className='mb-8 capitalize text-lg py-2 border-b-2 
-                 border-b-black'
+                className='mb-8 uppercase text-lg py-2 border-b
+                 border-b-black font-medium'
               >
                 {link}
               </li>
