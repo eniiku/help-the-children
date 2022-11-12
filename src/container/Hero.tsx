@@ -1,4 +1,5 @@
 import { Navbar } from '../components';
+import { Button } from '../components';
 
 export const Hero = () => {
   return (
@@ -33,7 +34,7 @@ export const Hero = () => {
                 How it works
               </button>
 
-              <button>donate now</button>
+              <Button>donate now</Button>
             </div>
           </div>
         </main>

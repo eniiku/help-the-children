@@ -24,7 +24,8 @@
 	background: #229FD4;
 	border-radius: 8px;
 	z-index: 5;
-	outline: none
+	outline: none;
+	transform: translate(-10px, -10px);
 }
 
 .custom-btn-shadow {
@@ -32,7 +33,6 @@
 	width: 120px;
 	height: 40px;
 	position: absolute;
-	top: 8px;
-	right: -4px;
 	border-radius: 8px;
+	top: 0;
 }

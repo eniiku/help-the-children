@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 import logoIcon from '../assets/Logo.svg';
+import { Button } from '../components';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,11 +35,8 @@ export const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className='hidden md:block w-120px h-50px relative'>
-        <button className='custom-btn relative'>donate now</button>
 
-        <div className='custom-btn-shadow'></div>
-      </div>
+      <Button>donate now</Button>
       <AiOutlineMenu size={26} onClick={handleMenuOpen} className='md:hidden' />
 
       {isMenuOpen && (
