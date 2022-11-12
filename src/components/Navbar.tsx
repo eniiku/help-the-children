@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <header className='flex justify-between items-center sticky z-40 py-8'>
       <div className='flex items-center gap-12'>
-        <div className='flex items-center gap-3'>
+        <div className='flex items-center gap-3 cursor-default'>
           <img
             src={logoIcon}
             alt='logo for TwinsFeed'
@@ -28,7 +28,10 @@ export const Navbar = () => {
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-4'>
             {['about us', 'mission', 'contact'].map((link) => (
-              <li key={link} className='capitalize font-medium'>
+              <li
+                key={link}
+                className='capitalize font-medium cursor-pointer desktop-link'
+              >
                 {link}
               </li>
             ))}
