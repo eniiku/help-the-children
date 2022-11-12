@@ -15,11 +15,21 @@ export const Navbar = () => {
       sticky z-50 '
     >
       <div>
-        <img src={logoIcon} alt='logo for TwinsFeed' />
-        <h1 className='font-bold text-2xl'>
-          Twin<span>Feed</span>
-        </h1>
+        <div>
+          <img src={logoIcon} alt='logo for TwinsFeed' />
+          <h1 className='font-bold text-2xl'>
+            Twin<span>Feed</span>
+          </h1>
+          <nav>
+            <ul>
+              {['about us', 'mission', 'contact'].map((link) => (
+                <li key={link}>{link}</li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </div>
+      <button>donate now</button>
       <AiOutlineMenu size={26} onClick={handleMenuOpen} />
 
       {isMenuOpen && (
