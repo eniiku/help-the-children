@@ -1,25 +1,41 @@
 import { Navbar } from '../components';
+import { Button } from '../components';
 
 export const Hero = () => {
   return (
     <section
-      className="bg-[url('/src/assets/jpgs/gabriel-rodrigues.jpg')] 
-      min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+      className='container w-screen bg-[url("/src/assets/jpgs/sunil-damor.jpg")] bg-cover bg-center
+      bg-no-repeat bg-blend-overlay bg-[#062B27] bg-opacity-60 flex flex-col text-white'
     >
       <Navbar />
-      <section className="table h-[calc(100vh-98px)] text-center text-white px-8">
-        <main className="table-cell align-middle">
-          <h1 className="text-5xl uppercase leading-[1.2] mb-4 font-bold">
-            giving kids a chance
-          </h1>
-          <p className="text-sm opacity-75 leading-[1.7] mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-            vitae, phasellus enim elementum. Amet, platea sit etiam accumsan,
-            vel dictum.
-          </p>
-          <div className="text-sm font-bold flex flex-col gap-2">
-            <button className="p-3 bg-black rounded-sm">How it works</button>
-            <button className="p-3 bg-black rounded-sm"> Donate Now</button>
+
+      <section className='flex-1 grid place-content-center'>
+        <main className='flex flex-col items-center -mt-[100px]'>
+          <div className='text-center mb-3'>
+            <p className='uppercase tracking-wide text-xs md:text-sm'>
+              a non profit organization dedicated to
+            </p>
+
+            <h1 className='text-3xl md:text-5xl tracking-wide uppercase'>
+              helping the children
+            </h1>
+          </div>
+
+          <div className='flex flex-col items-center w-[320px] md:w-[620px] text-center'>
+            <p className='font-xs md:font-base leading-6'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              laudantium autem vitae blanditiis veniam facere eius perferendis!
+              Fugiat hic itaque, atque placeat minus ut asperiores dolore
+              laborum magni, blanditiis mollitia?
+            </p>
+
+            <div className='flex items-center gap-16 mt-6'>
+              <button className='capitalize underline underline-offset-4 font-bold'>
+                How it works
+              </button>
+
+              <Button>donate now</Button>
+            </div>
           </div>
         </main>
       </section>

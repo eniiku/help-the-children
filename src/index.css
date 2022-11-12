@@ -9,3 +9,50 @@
 		font-family: 'Libre Baskerville', serif; 
 	}
 }
+
+.container {
+	min-height: 100vh;
+	min-width: 100%;
+	@apply px-4 md:px-8;
+}
+
+.underline, .desktop-link {
+	opacity: .8;
+	transition: all 200ms ease-in 100ms;
+}
+
+.underline:hover, .desktop-link:hover {
+	opacity: 1;
+	scale: 1.1;
+}
+
+.link-identifier:hover {
+}
+
+.custom-btn {
+	z-index: 5;
+	outline: none;
+	color: white;
+	font-weight: 700;
+	border-radius: 8px;
+	padding: .5rem 1.4rem;
+	background: #229FD4;
+	text-transform: capitalize;
+	transform: translate(-8px, -9px);
+	transition: transform 250ms ease 50ms;
+}
+
+.custom-btn:hover {
+	transform: translate(0, 0);
+}
+
+
+
+.custom-btn-shadow {
+	top: 0;
+	height: 38px;
+	width: 128px;
+	position: absolute;
+	border-radius: 8px;
+	border: 2px solid #229FD4; 	
+}
