@@ -5,7 +5,7 @@ function App() {
   return (
     <Fragment>
       <Hero />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
       <Footer />
     </Fragment>
   );

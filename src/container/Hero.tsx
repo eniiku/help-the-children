@@ -4,7 +4,7 @@ import { Button } from '../components';
 export const Hero = () => {
   return (
     <section
-      className='container w-screen bg-[url("/src/assets/jpgs/sunil-damor.jpg")] bg-cover bg-center
+      className='container bg-[url("/src/assets/jpgs/sunil-damor.jpg")] bg-cover bg-center
       bg-no-repeat bg-blend-overlay bg-[#062B27] bg-opacity-60 flex flex-col text-white'
     >
       <Navbar />
@@ -12,11 +12,11 @@ export const Hero = () => {
       <section className='flex-1 grid place-content-center'>
         <main className='flex flex-col items-center -mt-[100px]'>
           <div className='text-center mb-3'>
-            <p className='uppercase tracking-wide text-xs md:text-sm'>
+            <p className='uppercase tracking-wide text-xs font-medium md:text-sm'>
               a non profit organization dedicated to
             </p>
 
-            <h1 className='text-3xl md:text-5xl tracking-wide uppercase'>
+            <h1 className='text-3xl md:text-6xl uppercase playfair'>
               helping the children
             </h1>
           </div>
