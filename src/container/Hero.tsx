@@ -4,8 +4,9 @@ import { Button } from '../components';
 export const Hero = () => {
   return (
     <section
-      className='container bg-[url("/src/assets/jpgs/sunil-damor.jpg")] bg-cover bg-center
-      bg-no-repeat bg-blend-overlay bg-[#062B27] bg-opacity-60 flex flex-col text-white'
+      className='min-h-[100vh] bg-[url("/src/assets/jpgs/sunil-damor.jpg")] bg-cover bg-center
+      bg-no-repeat bg-blend-overlay bg-[#062B27] bg-opacity-60 flex flex-col text-white px-4
+      md:px-8'
     >
       <Navbar />
 

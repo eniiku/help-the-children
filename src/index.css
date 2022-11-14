@@ -6,102 +6,133 @@
 @tailwind utilities;
 
 @layer base {
-	html {
-		font-family: 'DM Sans', sans-serif;
-	}
+  html {
+    font-family: 'DM Sans', sans-serif;
+  }
 }
 .playfair {
-	font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .playfair-sub {
-	font-family: 'Playfair Display', serif;
-	text-transform: uppercase;
-	font-size: 2.7rem;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  font-weight: 700;
+  position: relative;
 }
 
 .container {
-	min-height: 100vh;
-	min-width: 100%;
-	@apply px-4 md:px-8;
+  min-height: 90vh;
+  @apply px-4 md:px-8;
 }
 
 .container-sub {
-	min-height: 90vh;
-	min-width: 100%;
-	@apply px-4 md:px-8;
+  min-height: 90vh;
+  min-width: 100%;
+  @apply px-4 md:px-8;
 }
 
-.underline, .desktop-link {
-	opacity: .8;
-	transition: all 200ms ease-in 100ms;
+.underline,
+.desktop-link {
+  opacity: 0.8;
+  transition: all 200ms ease-in 100ms;
 }
 
-.underline:hover, .desktop-link:hover {
-	opacity: 1;
-	scale: 1.1;
+.underline:hover,
+.desktop-link:hover {
+  opacity: 1;
+  scale: 1.1;
 }
 
 .custom-btn {
-	z-index: 5;
-	outline: none;
-	color: white;
-	font-weight: 700;
-	border-radius: 8px;
-	padding: .5rem 1.4rem;
-	background: #229FD4;
-	text-transform: capitalize;
-	transform: translate(-8px, -9px);
-	transition: transform 250ms ease 50ms;
+  z-index: 5;
+  outline: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.5rem 1.4rem;
+  background: #229fd4;
+  text-transform: capitalize;
+  transform: translate(-8px, -9px);
+  transition: transform 250ms ease 50ms;
 }
 
 .custom-btn:hover {
-	transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
 .custom-btn-shadow {
-	top: 0;
-	height: 38px;
-	width: 134px;
-	position: absolute;
-	border-radius: 8px;
-	border: 2px solid #229FD4; 	
+  top: 0;
+  height: 38px;
+  width: 134px;
+  position: absolute;
+  border-radius: 8px;
+  border: 2px solid #229fd4;
 }
 
 .donate__btn {
-	border: #777;
-	text-align: center;
-	background: #1b7da7;
-	color: white;
-	font-weight: 700;
-	letter-spacing: 2px;
-	border-radius: 12px;
-	padding: .8rem 2.3rem;
-	text-transform: capitalize;
-	transition: all 400ms ease-in-out;
+  border: #777;
+  text-align: center;
+  background: #1b7da7;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 12px;
+  padding: 0.8rem 2.3rem;
+  text-transform: capitalize;
+  transition: all 400ms ease-in-out;
 }
 
-.donate__btn:hover, .donate__btn:focus, .donate__btn:active {
-	background: #146283;
+.donate__btn:hover,
+.donate__btn:focus,
+.donate__btn:active {
+  background: #146283;
 }
 
 .donate__btn--green {
-	background: rgb(147, 221, 36);
+  background: rgb(147, 221, 36);
 }
 
-.donate__btn--green:hover, .donate__btn--green:focus, .donate__btn--green:active {
-	background: rgb(115, 175, 25)
+.donate__btn--green:hover,
+.donate__btn--green:focus,
+.donate__btn--green:active {
+  background: rgb(115, 175, 25);
 }
 
 .donate__btn--search {
-	grid-column-start: 2;
-	grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
 .donate__btn--submit {
-	grid-column-start: 4;
-	grid-column-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
 
-	grid-row-start: 1;
-	grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+@media screen and (max-width: 768px) {
+  .playfair-sub {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .donate__btn {
+    padding: 0.6rem 1.3rem;
+  }
+
+  .donate__btn--search {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .donate__btn--submit {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
 }
