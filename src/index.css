@@ -18,11 +18,12 @@
 	font-family: 'Playfair Display', serif;
 	text-transform: uppercase;
 	font-size: 2.7rem;
+	font-weight: 700;
+	position: relative;
 }
 
 .container {
-	min-height: 100vh;
-	min-width: 100%;
+	min-height: 90vh;
 	@apply px-4 md:px-8;
 }
 
