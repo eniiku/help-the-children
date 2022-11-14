@@ -3,8 +3,8 @@ import photoLeft2 from '../assets/jpgs/pexels-rodnae-productions.jpg';
 
 const About = () => {
   return (
-    <section className='container flex items-center justify-center md:grid md:grid-cols-2'>
-      <div className='flex flex-col items-center justify-center'>
+    <section className='container grid md:grid-cols-2'>
+      <div className='flex flex-col items-center justify-center '>
         <h1 className='playfair-sub'>who we are</h1>
         <p className='text-sm leading-[1.8] w-4/5 text-center md:text-left'>
           We are a non-profit organizaiton dedicated to helping the children We
@@ -14,7 +14,7 @@ const About = () => {
           fellow human beings, we are Help The Children.
         </p>
       </div>
-      <div className='md:relative'>
+      <div className='hidden md:block md:relative'>
         <img
           src={photoLeft1}
           alt='picture of children smiling'
