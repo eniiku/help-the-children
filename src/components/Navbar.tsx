@@ -27,12 +27,16 @@ export const Navbar = () => {
 
         <nav className='hidden md:block'>
           <ul className='flex items-center gap-4'>
-            {['about us', 'mission', 'contact'].map((link) => (
+            {[
+              { link: 'about us', url: 'about' },
+              { link: 'mission', url: 'mission' },
+              { link: 'contact', url: 'contact' },
+            ].map((link) => (
               <li
-                key={link}
+                key={link.link}
                 className='capitalize font-medium cursor-pointer desktop-link'
               >
-                {link}
+                <a href={`#${link.url}`}>{link.link}</a>
               </li>
             ))}
           </ul>
