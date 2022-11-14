@@ -12,7 +12,7 @@ export const Donate = () => {
         </p>
       </div>
 
-      <div className='grid mt-16 grid-cols-4 gap-4'>
+      <div className='grid mt-16 grid-cols-2 md:grid-cols-4 gap-4'>
         {['$5', '$15', '$45', '$125'].map((amount) => (
           <button key={amount} className='donate__btn'>
             {amount}
