@@ -13,8 +13,21 @@
 .playfair {
 	font-family: 'Playfair Display', serif;
 }
+
+.playfair-sub {
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+	font-size: 2.7rem;
+}
+
 .container {
 	min-height: 100vh;
+	min-width: 100%;
+	@apply px-4 md:px-8;
+}
+
+.container-sub {
+	min-height: 90vh;
 	min-width: 100%;
 	@apply px-4 md:px-8;
 }
@@ -27,9 +40,6 @@
 .underline:hover, .desktop-link:hover {
 	opacity: 1;
 	scale: 1.1;
-}
-
-.link-identifier:hover {
 }
 
 .custom-btn {
@@ -49,8 +59,6 @@
 	transform: translate(0, 0);
 }
 
-
-
 .custom-btn-shadow {
 	top: 0;
 	height: 38px;
@@ -58,4 +66,42 @@
 	position: absolute;
 	border-radius: 8px;
 	border: 2px solid #229FD4; 	
+}
+
+.donate__btn {
+	border: #777;
+	text-align: center;
+	background: #1b7da7;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 2px;
+	border-radius: 12px;
+	padding: .8rem 2.3rem;
+	text-transform: capitalize;
+	transition: all 400ms ease-in-out;
+}
+
+.donate__btn:hover, .donate__btn:focus, .donate__btn:active {
+	background: #146283;
+}
+
+.donate__btn--green {
+	background: rgb(147, 221, 36);
+}
+
+.donate__btn--green:hover, .donate__btn--green:focus, .donate__btn--green:active {
+	background: rgb(115, 175, 25)
+}
+
+.donate__btn--search {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.donate__btn--submit {
+	grid-column-start: 4;
+	grid-column-end: 5;
+
+	grid-row-start: 1;
+	grid-row-end: 3;
 }

@@ -1,11 +1,12 @@
 import { Fragment } from 'react';
-import { Footer, Hero, HowItWorks } from './container';
+import { Footer, Hero, HowItWorks, Donate } from './container';
 
 function App() {
   return (
     <Fragment>
       <Hero />
       {/* <HowItWorks /> */}
+      <Donate />
       <Footer />
     </Fragment>
   );
