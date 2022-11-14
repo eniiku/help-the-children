@@ -59,14 +59,19 @@ export const Navbar = () => {
             onClick={handleMenuClose}
           />
           <ul className=' table-cell align-middle'>
-            {['about us', 'mission', 'contact', 'donate'].map((link) => (
+            {[
+              { link: 'about us', url: '#about' },
+              { link: 'mission', url: '#mission' },
+              { link: 'contact', url: '#contact' },
+              { link: 'donate', url: '#donate' },
+            ].map((link) => (
               <li
-                key={link}
+                key={link.link}
                 onClick={handleMenuClose}
                 className='mb-8 uppercase text-lg py-2 border-b
                  border-b-black font-medium'
               >
-                {link}
+                <a href={link.url}>{link.link}</a>
               </li>
             ))}
           </ul>
