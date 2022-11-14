@@ -39,7 +39,9 @@ export const Navbar = () => {
         </nav>
       </div>
 
-      <Button>donate now</Button>
+      <div className='hidden md:block'>
+        <Button>donate now</Button>
+      </div>
       <AiOutlineMenu size={26} onClick={handleMenuOpen} className='md:hidden' />
 
       {isMenuOpen && (
