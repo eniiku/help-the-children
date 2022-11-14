@@ -2,7 +2,7 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export const Donate = () => {
   return (
-    <section className='container grid place-content-center'>
+    <section id='donate' className='container grid place-content-center'>
       <div className='flex flex-col items-center'>
         <h1 className='playfair-sub'>ready to help?</h1>
 
