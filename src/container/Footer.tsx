@@ -18,29 +18,48 @@ export const Footer = () => {
           {[
             {
               heading: 'company',
-              links: ['about us', 'mission', 'donate'],
+              links: [
+                { name: 'home', url: '#home' },
+                { name: 'about us', url: '#about' },
+                { name: 'mission', url: '#mission' },
+                { name: 'donate', url: '#donate' },
+              ],
             },
 
             {
               heading: 'follow',
-              links: ['instagram', 'twitter'],
+              links: [
+                { name: 'instagram', url: 'instagram.com' },
+                { name: 'twitter', url: 'twitter.com' },
+              ],
             },
 
             {
               heading: 'legal',
-              links: ['terms & conditions', 'privacy policy'],
+              links: [
+                {
+                  name: 'terms & conditions',
+                  url: 'https://www.wto.org/english/thewto_e/procurement_e/terms_conditions_e.pdf',
+                },
+                {
+                  name: 'privacy policy',
+                  url: 'https://www.termsfeed.com/public/uploads/2019/04/privacy-policy-template.pdf',
+                },
+              ],
             },
           ].map((item) => (
             <div key={item.heading}>
               <h1 className='uppercase font-bold mt-4'>{item.heading}</h1>
 
               <ul>
-                {item.links.map((link) => (
+                {item.links.map((item) => (
                   <li
-                    key={link}
+                    key={item.name}
                     className='capitalize text-sm mb-2 underline underline-offset-2'
                   >
-                    {link}
+                    <a href={item.url} className='cursor-pointer'>
+                      {item.name}
+                    </a>
                   </li>
                 ))}
               </ul>

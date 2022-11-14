@@ -3,7 +3,7 @@ import photoLeft2 from '../assets/jpgs/pexels-rodnae-productions.jpg';
 
 const About = () => {
   return (
-    <section className='container grid md:grid-cols-2'>
+    <section id='about' className='container grid md:grid-cols-2'>
       <div className='flex flex-col items-center justify-center '>
         <h1 className='playfair-sub'>who we are</h1>
         <p className='text-sm leading-[1.8] w-4/5 text-center md:text-left'>
