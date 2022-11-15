@@ -1,5 +1,5 @@
-import photoLeft1 from '../assets/jpgs/gabriel-rodrigues.jpg';
-import photoLeft2 from '../assets/jpgs/pexels-rodnae-productions.jpg';
+import photoLeft1 from '../assets/jpgs/pexels-lagos-food-bank-initiative-9090745.jpg';
+import photoLeft2 from '../assets/jpgs/pexels-lagos-food-bank-initiative.jpg';
 
 const About = () => {
   return (
@@ -27,12 +27,12 @@ const About = () => {
         <img
           src={photoLeft1}
           alt='picture of children smiling'
-          className='h-1/4 md:h-3/5 absolute top-[10%] left-[10%] rounded-lg'
+          className='w-2/3 md:w-2/3 absolute top-[8%] left-[5%] rounded-lg'
         />
         <img
           src={photoLeft2}
           alt='picture of volunteer picking goods for donation'
-          className='w-1/3 md:w-3/4 absolute z-30 bottom-[15%] left-[35%] rounded-lg'
+          className='w-2/3 md:w-2/3 absolute bottom-[8%] right-[5%] rounded-lg'
         />
       </div>
     </section>
