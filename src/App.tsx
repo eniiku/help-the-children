@@ -6,7 +6,7 @@ function App() {
     <Fragment>
       <Hero />
       <About />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       <Donate />
       <Footer />
     </Fragment>
